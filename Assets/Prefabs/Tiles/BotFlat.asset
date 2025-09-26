@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f948a39e1000bd94fbbbaae17ebfb54f, type: 3}
+  m_Name: BotFlat
+  m_EditorClassIdentifier: 
+  Name: BotFlat
+  Prefab: {fileID: 5107280167223504787, guid: 734e146577110d241a6845d3b3825a62, type: 3}
+  socketList:
+  - direction: 0
+    socket: LL
+  - direction: 1
+    socket: LL
+  - direction: 2
+    socket: LL
+  - direction: 3
+    socket: LL
+  weight: 1
