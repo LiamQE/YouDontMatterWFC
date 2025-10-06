@@ -31,7 +31,14 @@ public static class CompatibilityBuilder
                     }
                 }
 
-                entry.neighbors[direction] = compatible;
+                entry.neighbors.Add(new TileSetData.DirectionNeighbourPair
+                {
+                    direction = direction,
+                    neighbors = compatible
+                });
+
+                //following line of code was for when neighbors was a dictionary, not a list
+                //entry.neighbors[direction] = compatible;
             }
             tileSet.compatibilityMap.Add(entry);
         }

@@ -12,13 +12,18 @@ public class TileSetData : ScriptableObject
 {
     public List<TileData> tiles;
 
-    
+    [System.Serializable]
+    public class DirectionNeighbourPair
+    {
+        public Direction direction;
+        public List<TileData> neighbors;
+    }
 
     [System.Serializable]
     public class CompatibilityEntry
     {
         public TileData tile;
-        public Dictionary<Direction, List<TileData>> neighbors = new();
+        public List<DirectionNeighbourPair> neighbors = new();
     }
 
     public List<CompatibilityEntry> compatibilityMap = new();
