@@ -16,14 +16,14 @@ public class TileSetData : ScriptableObject
     public class DirectionNeighbourPair
     {
         public Direction direction;
-        public List<TileData> neighbors;
+        public List<TileData> compatibleNeighbors;
     }
 
     [System.Serializable]
     public class CompatibilityEntry
     {
         public TileData tile;
-        public List<DirectionNeighbourPair> neighbors = new();
+        public List<DirectionNeighbourPair> neighbors = new(); //infers type from context, same as new List<DirectionNeighbourPair>()
     }
 
     public List<CompatibilityEntry> compatibilityMap = new();

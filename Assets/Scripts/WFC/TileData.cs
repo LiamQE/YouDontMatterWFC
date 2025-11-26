@@ -10,6 +10,7 @@ public class TileData : ScriptableObject
 {
     public string Name;
     public GameObject Prefab;
+    public double weight;
 
     public List<DirectionSocketPair> socketList;
 
@@ -27,7 +28,7 @@ public class TileData : ScriptableObject
         return socketDict[dir];
     }
 
-    public int weight = 1;
+    
 }
 
 [System.Serializable]

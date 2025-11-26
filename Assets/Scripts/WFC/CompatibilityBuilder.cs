@@ -34,7 +34,7 @@ public static class CompatibilityBuilder
                 entry.neighbors.Add(new TileSetData.DirectionNeighbourPair
                 {
                     direction = direction,
-                    neighbors = compatible
+                    compatibleNeighbors = compatible
                 });
 
                 //following line of code was for when neighbors was a dictionary, not a list
